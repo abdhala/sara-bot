@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro | SuporteBot</title>
+  <link rel = "icon" href = "https://www.linx.com.br/app/themes/linx/dist/images/favicons/apple-icon-72x72.png"type = "image/x-icon"> 
+
+  <script  src="{{ url_for('static', filename='js/form_script.js')}}" defer></script>
+  <link rel="stylesheet" media="all" href="{{ url_for('static', filename='css/form_style.css')}}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap">
+
+
+</head>
+
+<body>
+  <form action="">
+    <img src="https://www.linx.com.br/app/themes/linx/crystals/dist/assets/static/logo.png">
+    <h2>Cadastro - Sara a SuporteBot</h2>
+    <h3>Nome: </h3>
+    <div class="input">
+      <input required type="text">
+      <span class="error"></span>
+    </div>
+
+    <h3>Email: </h3>
+    <div class="input">
+      <input required type="email">
+      <span class="error"></span>
+    </div>
+
+    <h3>Senha: </h3>
+    <div class="input">
+      <input required type="password">
+      <span class="error"></span>
+    </div>
+
+    <button type="submit" style="border-bottom: none; color: white;">Cadastrar</button>
+
+    <br><br>
+    <p style="text-align: center;">Se já tem cadastro, <a href="/login">Logue-se</a></p>
+
+
+  </form>
+</body>
+
+</html>
